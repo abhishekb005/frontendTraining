@@ -1,5 +1,16 @@
-<p>post works!</p>
-<div>
-    <h5 *ngFor="let mypost of post">{{mypost.title}}</h5>
-    <br>
-</div>
+<table style="width:100%">
+    <tr>
+      <th>User Id</th>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Body</th>
+    </tr>
+    <tr *ngFor="let mypost of post">
+      <td>{{mypost.userId}}</td>
+      <td>{{mypost.id}}</td>
+      <td>{{mypost.title}}</td>
+      <td>{{mypost.body}}</td>
+      
+    </tr>
+    
+  </table>

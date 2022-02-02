@@ -1,6 +1,7 @@
 <p>currency works!</p>
 <div>
     <label for="currencies">Choose a Currency</label>
+    <br>
     <select name="currencies" id="currencies" [(ngModel)]="givenSelectedCurrency" (change)="calculate()"> 
         <option *ngFor="let currency of allCurrency" [ngValue]="currency" (change)="selectGivenCurrency(currency)">{{currency.name}}</option>
       </select>
@@ -9,12 +10,12 @@
 
 
 <br><br>
-    <label for="findcurrencies">Choose a Currency</label>
+    <label for="findcurrencies">Choose a Currency</label><br>
     <select name="findcurrencies" id="findcurrencies" [(ngModel)]="findSelectedCurrency" (change)="calculate()">
         <option *ngFor="let currency of allCurrency" [ngValue]="currency" (change)="selectFindCurrency(currency)">{{currency.name}}</option>
       </select>
       <br><br>
       
-    <input id="findAmount" [(ngModel)]="findAmount"  placeholder="givenAmount">
+    <input id="findAmount" [(ngModel)]="findAmount"  placeholder="givenAmount"><br>
     <button type="button" (click)="calculate()">Convert</button>
 </div>
