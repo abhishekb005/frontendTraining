@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid-container {
+          display: grid;
+          grid-column-gap: 50px;
+          grid-template-columns: auto auto auto;
+          background-color: #2196F3;
+          padding: 10px;
+        }
+        
+        .grid-item {
+          background-color: rgba(255, 255, 255, 0.8);
+          border: 1px solid rgba(0, 0, 0, 0.8);
+          padding: 20px;
+          font-size: 30px;
+          text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <button type="button" id=1>1</button>
+        </div>
+        <div class="grid-item">
+            <button type="button" id=2>2</button>
+        </div>
+        <div class="grid-item">
+            <button type="button" id=3>3</button>
+        </div>
+        <div class="grid-item">
+            <button type="button" id=4>4</button>
+        </div>
+        <div class="grid-item">
+            <button type="button" id=5 onclick="shift()">5</button>
+        </div>
+        <div class="grid-item">
+            <button type="button" id=6>6</button>
+        </div>
+        <div class="grid-item">
+            <button type="button" id=7>7</button>
+        </div>
+        <div class="grid-item">
+            <button type="button" id=8>8</button>
+        </div>
+        <div class="grid-item">
+            <button type="button" id=9>9</button>
+        </div>
+    </div>
+    <script>
+        var a=[1,2,3,6,9,8,7,4];
+        var count=0;
+        function getcount(count){
+            if(count<0){
+                return a.length+count;
+            }
+            if (count>a.length-1) {
+                return count%a.length;
+            }
+            return count;
+        }
+        function shift(){
+            
+            document.getElementById(1).innerHTML=a[getcount(count)];
+            document.getElementById(2).innerHTML=a[getcount(count+1)];
+            document.getElementById(3).innerHTML=a[getcount(count+2)];
+            document.getElementById(6).innerHTML=a[getcount(count+3)];
+            document.getElementById(9).innerHTML=a[getcount(count+4)];
+            document.getElementById(8).innerHTML=a[getcount(count+5)];
+            document.getElementById(7).innerHTML=a[getcount(count+6)];
+            document.getElementById(4).innerHTML=a[getcount(count+7)];
+            count=getcount(count-1);
+            
+        }
+    </script>
+</body>
+</html>
