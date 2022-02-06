@@ -1,0 +1,14 @@
+
+<table style="width:100%">
+    <tr>
+      <td>Name</td>
+      <td>Age</td>
+    </tr>
+    <tr *ngFor="let person of personData">
+      <td>{{person.name}}</td>
+      <td>{{person.age}}</td>
+      
+    </tr>
+    
+  </table>
+  <app-person-child (sortName)="sortbyName()" (sortAge)="sortbyAge()"></app-person-child>

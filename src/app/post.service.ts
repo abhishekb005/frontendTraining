@@ -4,6 +4,7 @@ import { MessageService } from './message.service';
 import { Observable, of } from 'rxjs';
 import { Post } from './post';
 import { catchError, map, tap } from 'rxjs/operators';
+import { Person } from './Person';
 @Injectable({
   providedIn: 'root'
 })

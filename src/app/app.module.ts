@@ -11,6 +11,8 @@ import { CurrencyComponent } from './currency/currency.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostComponent } from './post/post.component';
 import { PostButtonComponent } from './post-button/post-button.component';
+import { PersonParentComponent } from './person-parent/person-parent.component';
+import { PersonChildComponent } from './person-child/person-child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,9 @@ import { PostButtonComponent } from './post-button/post-button.component';
     MessagesComponent,
     CurrencyComponent,
     PostComponent,
-    PostButtonComponent
+    PostButtonComponent,
+    PersonParentComponent,
+    PersonChildComponent
   ],
   imports: [
     BrowserModule,
