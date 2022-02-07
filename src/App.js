@@ -11,6 +11,7 @@ import TableChild from './components/PostTable';
 import PostButton from './components/PostButton';
 import PostTable from './components/PostTable';
 import PostDetail from './components/PostDetail';
+import Parent from './components/Parent';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       <br></br>
       <p>Currency Convertor</p>
       <Currencyconvertor/>
-      
+      <Parent/>
       <Switch>
         <Route exact path="/about" component={About}></Route>
         
