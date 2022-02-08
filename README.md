@@ -1,3 +1,15 @@
+
+Day 4 -
+Task 1
+Currency Calculator - Create an application that converts amount of money selected in one currency to another currency selected by user.(take any 5 currencies for now) Try to make different components and link them
+Component -Currencyconvertor.js
+
+
+Task 2
+Use this - https://jsonplaceholder.typicode.com/posts, get request and display data in a table format. The data should be displayed on click of a button present in parent component and data should be displayed from a child component. Use routing for rendering child component on button click.
+Component -PostButton.js,PostDetail.js,PostTable.js,
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
